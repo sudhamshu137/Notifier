@@ -76,8 +76,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         now.set(Calendar.MINUTE,minute);
         now.set(Calendar.SECOND,second);
 
-        etTitle.setText(now.toString());
-
         Intent intent = new Intent(getApplicationContext(),TestActivity.class);
         intent.putExtra("test","I am a String");
         NotifyMe notifyMe = new NotifyMe.Builder(getApplicationContext())
